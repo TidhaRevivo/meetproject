@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   <title>Rank.It</title>
+     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+  </head>
+  <body class="bod">
+    <div class="container-fluid">
+      <div class="row">
+   <div class="col-4"><h1>Rank.It★</h1></div>
+   <div class="col-6"><h1><br> Series!</h1></div>
+   </div>
+   <br>
+   <ul>
+  <li><a href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('movies')}}">Movies</a></li>
+  <li><a class="active" href="{{url_for('series')}}">Series</a></li>
+  <li><a href="{{url_for('about')}}">About</a></li>
+  </ul>
+  <h1>{{u}}</h1>
+   <center>
+    <br><br>
+   <!--  <div class="form">
+    <form action="/addfanart" method="POST">
+    <span class="text-center">Upload YOUR Art!</span>
+   <div class="input-container"> <input type="text" name="image" placeholder="Image Url: " required=""></div><br>
+   <input type="hidden" name="username" value={{u}}> 
+    <br><input type="submit" value="submit" class="button" style="vertical-align:middle"> </center>
+    
+  </form> -->
+    </div>
+  
+
+   </div>
+   </div>
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+  </body>
+</html>

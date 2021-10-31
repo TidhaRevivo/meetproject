@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign Up!</title>
+     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+  </head>
+<body class="bod">
+  
+<h1>Rank.It★</h1>
+
+
+   <br>
+   <center>
+    <br><br>
+    <div class="form">
+  <form action="/signup" method="POST">
+    <span class="text-center">Join Rank.It, Sign Up!</span>
+    <div class="input-container"><input type="text" name="email" placeholder="Email " required=""></div>
+    <br>
+   <div class="input-container"> <input type="text" name="username" placeholder="Username: " required=""></div>
+    <br>
+   <div class="input-container"> <input type="password" name="pwd" placeholder="PassWord: " required=""></div>
+    <br>
+   <div class="input-container"> <input type="text" name="name" placeholder="Full Name: " required=""></div>
+    <br>
+    
+    <input type="submit" value="submit" class="button" style="vertical-align:middle"> </center>
+ </form>
+  </div>
+  
+   
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+  
+</body>
+</html>
